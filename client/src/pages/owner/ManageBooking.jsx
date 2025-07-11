@@ -1,7 +1,7 @@
 import React, { useCallback } from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import Title from "../../components/owner/title";
+import Title from "../../components/owner/Title";
 import { useAppContext } from "../../context/AppContext";
 import toast from "react-hot-toast";
 

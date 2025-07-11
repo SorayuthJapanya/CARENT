@@ -1,5 +1,5 @@
 import React from "react";
-import Title from "../../components/owner/title";
+import Title from "../../components/owner/Title";
 import { useState } from "react";
 import { assets } from "../../assets/assets/assets";
 import { useEffect } from "react";
