@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(morgan("dev"));
 
 app.get("/", (req, res) => {
-  res.send("Hello Server Project!");
+  res.send("Hello Server Project!", connectDB());
 });
 app.use("/api/user", userRoutes);
 app.use("/api/owner", ownerRoutes);
