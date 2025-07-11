@@ -46,7 +46,7 @@ const CarDetail = () => {
   }, [cars, id]);
 
   return car ? (
-    <div
+    <motion.div
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
@@ -203,7 +203,7 @@ const CarDetail = () => {
           </p>
         </motion.form>
       </div>
-    </div>
+    </motion.div>
   ) : (
     <Loader />
   );
