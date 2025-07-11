@@ -4,7 +4,6 @@ import { Toaster } from "react-hot-toast";
 import NavBar from "./components/NavBar";
 import { Route, Routes, useLocation } from "react-router";
 import HomePage from "./pages/HomePage";
-import CarDetail from "./pages/Cardetail";
 import Cars from "./pages/Cars";
 import MyBooking from "./pages/MyBooking";
 import Footer from "./components/Footer";
@@ -15,6 +14,7 @@ import ManageCar from "./pages/owner/ManageCar";
 import ManageBooking from "./pages/owner/ManageBooking";
 import Login from "./components/login";
 import { useAppContext } from "./context/AppContext";
+import CarDetail from "./pages/Cardetail";
 
 const App = () => {
   const { showLogin } = useAppContext();
