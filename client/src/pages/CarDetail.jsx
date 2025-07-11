@@ -42,7 +42,10 @@ const CarDetail = () => {
   };
 
   useEffect(() => {
-    setCar(cars.find((car) => car._id === id));
+    if (cars.length) {
+      const foundCar = cars.find((car) => car._id === id);
+      setCar(foundCar || null);
+    }
   }, [cars, id]);
 
   return car ? (
@@ -83,7 +86,7 @@ const CarDetail = () => {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.5, deploy: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             className="space-y-6"
           >
             <div>
@@ -112,7 +115,7 @@ const CarDetail = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4 }}
                   key={text}
-                  className="flex flex-col items-center bg-light p-4 rouded-lg"
+                  className="flex flex-col items-center bg-light p-4 rounded-lg"
                 >
                   <img src={icon} alt="icon" className="h-5 mb-2" />
                   {text}
