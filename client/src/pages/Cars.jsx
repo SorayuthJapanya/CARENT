@@ -6,7 +6,7 @@ import { useState } from "react";
 import { useSearchParams } from "react-router";
 import { useAppContext } from "../context/AppContext";
 import toast from "react-hot-toast";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 const Cars = () => {
   const { cars, axios } = useAppContext();

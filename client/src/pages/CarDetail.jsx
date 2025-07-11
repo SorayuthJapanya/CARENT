@@ -6,7 +6,7 @@ import { assets } from "../assets/assets/assets";
 import Loader from "../components/Loader";
 import { useAppContext } from "../context/AppContext";
 import toast from "react-hot-toast";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 const CarDetail = () => {
   const { id } = useParams();

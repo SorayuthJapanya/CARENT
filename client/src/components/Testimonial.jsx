@@ -1,7 +1,7 @@
 import React from "react";
 import Title from "./Title";
 import { assets } from "../assets/assets/assets";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 const Testimonial = () => {
   const testimonials = [

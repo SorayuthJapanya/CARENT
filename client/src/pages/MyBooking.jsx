@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import Title from "../components/Title";
 import { useAppContext } from "../context/AppContext";
 import toast from "react-hot-toast";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 const MyBooking = () => {
   const { axios, user, currency } = useAppContext();

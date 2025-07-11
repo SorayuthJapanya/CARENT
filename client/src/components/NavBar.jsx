@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { assets, menuLinks } from "../assets/assets/assets";
 import { Link, useLocation, useNavigate } from "react-router";
 import { useAppContext } from "../context/AppContext";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import toast from "react-hot-toast";
 
 const NavBar = () => {

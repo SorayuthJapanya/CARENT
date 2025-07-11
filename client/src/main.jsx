@@ -5,7 +5,7 @@ import "./index.css";
 import App from "./App.jsx";
 import { BrowserRouter } from "react-router";
 import AppProvider from "./context/AppProvider.jsx";
-import { MotionConfig } from "motion/react";
+import { MotionConfig } from "framer-motion";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

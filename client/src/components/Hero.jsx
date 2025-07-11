@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { assets, cityList } from "../assets/assets/assets";
 import { useAppContext } from "../context/AppContext";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   const [pickupLocation, setPickupLocation] = useState("");

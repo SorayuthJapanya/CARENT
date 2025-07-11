@@ -4,7 +4,7 @@ import { assets } from "../assets/assets/assets";
 import CarCard from "./CarCard";
 import { useNavigate } from "react-router";
 import { useAppContext } from "../context/AppContext";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 const FeatureSection = () => {
   const navigate = useNavigate();
