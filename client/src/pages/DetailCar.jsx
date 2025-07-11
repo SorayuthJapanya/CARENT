@@ -1,15 +1,13 @@
-import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
-import { useParams } from "react-router";
-import { assets } from "../assets/assets/assets";
-import Loader from "../components/Loader";
-import { useAppContext } from "../context/AppContext";
-import toast from "react-hot-toast";
-import { motion } from "framer-motion";
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router';
+import { useAppContext } from '../context/AppContext';
+import toast from 'react-hot-toast';
+import { assets } from '../assets/assets/assets';
+import { motion } from 'framer-motion';
+import { Loader } from 'lucide-react';
 
-const CarDetail = () => {
-  const { id } = useParams();
+const DetailCar = () => {
+const { id } = useParams();
   const {
     cars,
     axios,
@@ -210,6 +208,6 @@ const CarDetail = () => {
   ) : (
     <Loader />
   );
-};
+}
 
-export default CarDetail;
+export default DetailCar

@@ -13,7 +13,7 @@ import AddCar from "./pages/owner/AddCar";
 import ManageCar from "./pages/owner/ManageCar";
 import ManageBooking from "./pages/owner/ManageBooking";
 import Login from "./components/Login";
-import CarDetail from "./pages/CarDetail";
+import DetailCar from "./pages/DetailCar";
 import { useAppContext } from "./context/AppContext";
 
 const App = () => {
@@ -28,7 +28,7 @@ const App = () => {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/car-details/:id" element={<CarDetail />} />
+        <Route path="/car-details/:id" element={<DetailCar />} />
         <Route path="/cars" element={<Cars />} />
         <Route path="/my-bookings" element={<MyBooking />} />
 
