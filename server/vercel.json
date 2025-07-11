@@ -1,4 +1,4 @@
-  {
+{
     "version": 2,
     "builds": [
         {
@@ -16,5 +16,7 @@
             "src": "/(.*)",
             "dest": "server.js"
         }
-    ]
+    ],
+    "buildCommand": "pnpm run build",
+    "installCommand": "pnpm install"
 }
