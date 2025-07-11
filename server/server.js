@@ -14,13 +14,18 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 // Middleware
-app.use(cors());
+app.use(
+  cors({
+    origin: ["https://carent-umber.vercel.app", "http://localhost:5173"],
+    credentials: true,
+  })
+);
 app.use(helmet());
 app.use(express.json());
 app.use(morgan("dev"));
 
 app.get("/", (req, res) => {
-  res.send("Hello Server Project!", connectDB());
+  res.send("Hello Server Project!");
 });
 app.use("/api/user", userRoutes);
 app.use("/api/owner", ownerRoutes);
