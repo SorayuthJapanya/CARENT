@@ -1,9 +1,9 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { assets } from "../../assets/assets/assets";
-import Title from "../../components/owner/title";
 import { useAppContext } from "../../context/AppContext";
 import toast from "react-hot-toast";
 import { Navigate } from "react-router";
+import Title from "../../components/owner/title";
 
 const Dashboard = () => {
   const { axios, isOwner, currency, loadingUser } = useAppContext();
