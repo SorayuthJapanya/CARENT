@@ -7,9 +7,9 @@ const {
   getOwnerCars,
   getDashboardData,
   updateUserImage,
-} = require("../controller/owner.controller");
-const { protectAuthorize } = require("../middleware/user.middleware");
-const uploadMiddleware = require("../middleware/upload.middleware");
+} = require("../controller/ownerController");
+const { protectAuthorize } = require("../middleware/userMiddleware");
+const uploadMiddleware = require("../middleware/uploadMiddleware");
 
 const ownerRoutes = express.Router();
 

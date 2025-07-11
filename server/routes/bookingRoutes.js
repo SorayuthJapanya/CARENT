@@ -5,8 +5,8 @@ const {
   getUserBooking,
   getOwnerBooking,
   updateBookingStatus,
-} = require("../controller/booking.controller");
-const { protectAuthorize } = require("../middleware/user.middleware");
+} = require("../controller/bookingController");
+const { protectAuthorize } = require("../middleware/userMiddleware");
 
 const bookingRoutes = express.Router();
 

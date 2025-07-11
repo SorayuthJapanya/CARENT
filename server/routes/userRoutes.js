@@ -4,8 +4,8 @@ const {
   loginUser,
   getUserData,
   getCars,
-} = require("../controller/User.controller");
-const { protectAuthorize } = require("../middleware/user.middleware");
+} = require("../controller/userController");
+const { protectAuthorize } = require("../middleware/userMiddleware");
 
 const userRoutes = express.Router();
 

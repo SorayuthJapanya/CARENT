@@ -5,9 +5,9 @@ const helmet = require("helmet");
 const morgan = require("morgan");
 
 const connectDB = require("./config/db");
-const userRoutes = require("./routes/user.routes");
-const ownerRoutes = require("./routes/owner.routes");
-const bookingRoutes = require("./routes/booking.routes");
+const userRoutes = require("./routes/userRoutes");
+const ownerRoutes = require("./routes/ownerRoutes");
+const bookingRoutes = require("./routes/bookingRoutes");
 
 const app = express();
 
