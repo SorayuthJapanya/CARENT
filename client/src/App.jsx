@@ -14,7 +14,7 @@ import ManageCar from "./pages/owner/ManageCar";
 import ManageBooking from "./pages/owner/ManageBooking";
 import Login from "./components/Login";
 import { useAppContext } from "./context/AppContext";
-import CarDetail from "./pages/Cardetail";
+import CarDetail from "./pages/CarDetail";
 
 const App = () => {
   const { showLogin } = useAppContext();
