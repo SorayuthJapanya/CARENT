@@ -3,7 +3,7 @@ import { assets } from "../../assets/assets/assets";
 import { useAppContext } from "../../context/AppContext";
 import toast from "react-hot-toast";
 import { Navigate } from "react-router";
-import Title from "../../components/owner/title";
+import Title from "../../components/owner/Title";
 
 const Dashboard = () => {
   const { axios, isOwner, currency, loadingUser } = useAppContext();
