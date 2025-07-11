@@ -4,7 +4,7 @@ const cors = require("cors");
 const helmet = require("helmet");
 const morgan = require("morgan");
 
-const connectDB = require("./config/db");
+const connectDB = require("./config/db.js");
 const userRoutes = require("./routes/userRoutes");
 const ownerRoutes = require("./routes/ownerRoutes");
 const bookingRoutes = require("./routes/bookingRoutes");
@@ -31,7 +31,16 @@ app.use("/api/user", userRoutes);
 app.use("/api/owner", ownerRoutes);
 app.use("/api/bookings", bookingRoutes);
 
-app.listen(port, async () => {
-  await connectDB();
-  console.log(`Server is running on http://localhost:${port}`);
-});
+const startServer = async () => {
+  try {
+    await connectDB(); // รอให้เชื่อม MongoDB เสร็จก่อน
+    app.listen(port, () => {
+      console.log(`✅ Server is running on http://localhost:${port}`);
+    });
+  } catch (error) {
+    console.error("❌ Failed to connect to MongoDB:", error);
+    process.exit(1);
+  }
+};
+
+startServer();
