@@ -12,7 +12,7 @@ import Dashboard from "./pages/owner/Dashboard";
 import AddCar from "./pages/owner/AddCar";
 import ManageCar from "./pages/owner/ManageCar";
 import ManageBooking from "./pages/owner/ManageBooking";
-import Login from "./components/login";
+import Login from "./components/Login";
 import { useAppContext } from "./context/AppContext";
 import CarDetail from "./pages/Cardetail";
 
